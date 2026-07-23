@@ -1,171 +1,191 @@
-# Escape-Room-Game-Cpp
-A simple 2D detective-style escape room game developed in **C++** using **SFML**, where players investigate a locked laboratory, collect evidence, solve puzzles, and uncover the identity of the killer to escape.
+# Detective Escape Room 🕵️
 
-This project was developed as a course project to demonstrate object-oriented software design, interactive GUI programming, and game system architecture.
+A graphical detective escape room game built in **C++** using **GTK**, developed as the final project for Computer System Programming.
 
----
-
-## Gameplay
-
-The player wakes up inside a locked research laboratory during an emergency lockdown.
-
-To escape, the player must:
-
-- Search the room for clues
-- Collect and manage inventory items
-- Restore power to the facility
-- Unlock hidden compartments
-- Access the security terminal
-- Analyze evidence
-- Identify the correct suspect
-- Escape the laboratory
-
-Rather than focusing on combat, the game emphasizes exploration, puzzle solving, and logical reasoning.
+Players investigate a mysterious crime scene by exploring interactive objects, collecting evidence, solving puzzles, and identifying the correct suspect to escape the room.
 
 ---
 
-## Features
+## Demo
 
-### Interactive Room
-- Clickable objects
-- Context-based interactions
-- Progressive puzzle unlocking
+*(Add screenshots or GIFs here)*
 
-### Inventory System
-- Collect and store items
-- Item descriptions
-- Use items on different objects
-- Evidence tracking
-
-### Puzzle System
-- Restore power
-- Unlock cabinets
-- Terminal password puzzles
-- Security verification
-
-### Detective Storyline
-- Hidden clues
-- Multiple suspects
-- Investigation notes
-- Terminal log analysis
-- Final deduction system
+| Main Room | Inventory | Terminal |
+|-----------|-----------|----------|
+| ![](images/main.png) | ![](images/inventory.png) | ![](images/terminal.png) |
 
 ---
 
-## Technologies
+# Features
+
+- Interactive point-and-click GUI
+- Detective-style mystery gameplay
+- Inventory management system
+- Object-oriented architecture
+- Puzzle progression system
+- Terminal authentication puzzle
+- Save & Load game functionality
+- Exception handling
+- Dynamic memory management using smart pointers
+- Modular C++ project structure
+
+---
+
+# Technologies
 
 - C++
-- SFML
-- Object-Oriented Programming
+- GTK
 - STL Containers
-- Smart Pointers
+- Object-Oriented Programming
+- Smart Pointers (`std::unique_ptr`, `std::shared_ptr`)
 - File I/O
-- Exception Handling
+- Event-driven Programming
 
 ---
 
-## Software Design
+# Project Structure
 
-The project follows a modular object-oriented architecture.
+```
+.
+├── main.cpp
+├── EscapeRoom.cpp
+├── EscapeRoom.h
+├── assets/
+├── saves/
+└── README.md
+```
 
-Example classes include:
+---
 
-- Game
-- Player
-- Room
-- Inventory
-- Item
-- Puzzle
-- Terminal
-- Door
+# Gameplay
 
-The design demonstrates:
+The player wakes up inside a locked room after a murder has taken place.
+
+To escape, players must:
+
+- Inspect objects around the room
+- Search for hidden clues
+- Collect important evidence
+- Unlock new interactions
+- Access a secured computer terminal
+- Identify the real murderer
+- Escape successfully
+
+The game is built around an event-driven interaction system where every object behaves independently through polymorphism.
+
+---
+
+# Software Design
+
+The project demonstrates several core Computer System Programming concepts:
+
+## Object-Oriented Programming
 
 - Inheritance
-- Polymorphism
 - Encapsulation
-- Modular programming
+- Runtime Polymorphism
+- Abstract Base Classes
 
----
-
-## Project Structure
+Example hierarchy:
 
 ```
-src/
-    Game.cpp
-    Player.cpp
-    Inventory.cpp
-    Puzzle.cpp
-    Terminal.cpp
-    ...
-
-include/
-    Game.h
-    Player.h
-    Inventory.h
-    ...
-
-assets/
-    images/
-    fonts/
-
-README.md
+Interactable
+├── Desk
+├── Cabinet
+├── Toolbox
+├── Terminal
+└── ExitDoor
 ```
 
 ---
 
-## Skills Demonstrated
+## Smart Memory Management
 
-- Object-Oriented Design
-- GUI Programming
-- Event Handling
-- Game State Management
-- Inventory Systems
-- Puzzle Logic
-- Software Architecture
-- C++ Memory Management
-- Modular Development
+The project uses modern C++ smart pointers.
+
+```cpp
+std::unique_ptr<Interactable>
+std::shared_ptr<Item>
+```
+
+This avoids memory leaks while simplifying ownership management.
 
 ---
 
-## Future Improvements
+## STL Containers
+
+- `std::map`
+- `std::vector`
+- `std::string`
+
+---
+
+## File I/O
+
+The game supports persistent save files by storing:
+
+- Inventory
+- Player progress
+- Latest game state
+
+---
+
+## Exception Handling
+
+Custom exceptions protect the game against invalid interactions and file errors.
+
+```cpp
+class GameException : public std::runtime_error
+```
+
+---
+
+# Learning Outcomes
+
+Through this project I gained practical experience with:
+
+- Designing modular C++ applications
+- Building event-driven GUI applications
+- Applying object-oriented design principles
+- Managing dynamic memory safely
+- Implementing file persistence
+- Handling runtime exceptions
+- Organizing large C++ projects
+
+---
+
+# Future Improvements
 
 - Multiple rooms
-- Save/Load functionality
-- Sound effects and background music
 - Additional puzzles
-- Animated interactions
-- Expanded storyline
 - NPC dialogue system
+- Sound effects
+- Animated transitions
+- Save slots
+- Cross-platform support
+- Better UI styling
 
 ---
 
-## Screenshots
-
-*(Add gameplay screenshots here)*
-
-Example:
-
-![Gameplay](images/gameplay.png)
-
----
-
-## Learning Outcomes
-
-This project strengthened my understanding of:
-
-- Object-oriented software development
-- GUI application development with SFML
-- Managing complex program state
-- Designing scalable game architecture
-- Applying modern C++ programming practices
-
----
-
-## Author
+# Author
 
 **Vu Hoang Lan**
 
 Electrical & Computer Engineering @ VinUniversity
 
-Interested in Software Engineering, Embedded Systems, Robotics, and Game Development.
+Interested in:
+
+- Systems Programming
+- Embedded Systems
+- FPGA Design
+- Software Engineering
+- Robotics
+
+LinkedIn:
+*(Add your LinkedIn link)*
+
+---
+
+## License
+
+This project was developed for educational purposes.
