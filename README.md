@@ -1,5 +1,5 @@
 # Escape-Room-Game-Cpp
-A 2D detective-style escape room game developed in **C++** using **SFML**, where players investigate a locked laboratory, collect evidence, solve puzzles, and uncover the identity of the killer to escape.
+A simple 2D detective-style escape room game developed in **C++** using **SFML**, where players investigate a locked laboratory, collect evidence, solve puzzles, and uncover the identity of the killer to escape.
 
 This project was developed as a course project to demonstrate object-oriented software design, interactive GUI programming, and game system architecture.
 
