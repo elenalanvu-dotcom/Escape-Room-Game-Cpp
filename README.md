@@ -5,30 +5,21 @@ A graphical detective escape room game built in **C++** using **GTK**, developed
 Players investigate a mysterious crime scene by exploring interactive objects, collecting evidence, solving puzzles, and identifying the correct suspect to escape the room.
 
 ---
+## Documentation
 
-## Demo
+The complete project report, including system architecture, algorithms, UML diagrams, testing, and implementation details, is available here:
 
-*(Add screenshots or GIFs here)*
+📄 https://drive.google.com/file/d/1GygHipb62X6AqeFrSb_BbJAA8Bg4voDX/view?usp=sharing
 
-| Main Room | Inventory | Terminal |
-|-----------|-----------|----------|
-| ![](images/main.png) | ![](images/inventory.png) | ![](images/terminal.png) |
+## Project Highlights
 
----
-
-# Features
-
-- Interactive point-and-click GUI
-- Detective-style mystery gameplay
-- Inventory management system
-- Object-oriented architecture
-- Puzzle progression system
-- Terminal authentication puzzle
-- Save & Load game functionality
-- Exception handling
-- Dynamic memory management using smart pointers
-- Modular C++ project structure
-
+- Developed a desktop escape room game using C++ and GTK.
+- Applied object-oriented design with inheritance and runtime polymorphism.
+- Managed dynamic memory using `std::unique_ptr` and `std::shared_ptr`.
+- Implemented inventory management, puzzle progression, and event-driven interactions.
+- Built save/load functionality using file I/O.
+- Used STL containers (`std::map`, `std::vector`) for efficient game state management.
+- Added custom exception handling for robust error management.
 ---
 
 # Technologies
@@ -169,20 +160,13 @@ Through this project I gained practical experience with:
 
 # Author
 
-**Vu Hoang Lan**
+**Vu Hoang Lan, Le Gia Thai**
 
 Electrical & Computer Engineering @ VinUniversity
 
-Interested in:
-
-- Systems Programming
-- Embedded Systems
-- FPGA Design
-- Software Engineering
-- Robotics
 
 LinkedIn:
-*(Add your LinkedIn link)*
+https://www.linkedin.com/in/hoàng-lan-vũ-elena-a03294424/
 
 ---
 
