@@ -1,8 +1,4 @@
 # Escape-Room-Game-Cpp
-A 2D detective escape room game built in C++ and SFML, featuring an interactive inventory system, puzzle mechanics, object-oriented architecture, and a terminal-based mystery-solving experience.
-
-# Escape Room Terminal
-
 A 2D detective-style escape room game developed in **C++** using **SFML**, where players investigate a locked laboratory, collect evidence, solve puzzles, and uncover the identity of the killer to escape.
 
 This project was developed as a course project to demonstrate object-oriented software design, interactive GUI programming, and game system architecture.
