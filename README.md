@@ -34,20 +34,6 @@ The complete project report, including system architecture, algorithms, UML diag
 
 ---
 
-# Project Structure
-
-```
-.
-├── main.cpp
-├── EscapeRoom.cpp
-├── EscapeRoom.h
-├── assets/
-├── saves/
-└── README.md
-```
-
----
-
 # Gameplay
 
 The player wakes up inside a locked room after a murder has taken place.
@@ -63,71 +49,6 @@ To escape, players must:
 - Escape successfully
 
 The game is built around an event-driven interaction system where every object behaves independently through polymorphism.
-
----
-
-# Software Design
-
-The project demonstrates several core Computer System Programming concepts:
-
-## Object-Oriented Programming
-
-- Inheritance
-- Encapsulation
-- Runtime Polymorphism
-- Abstract Base Classes
-
-Example hierarchy:
-
-```
-Interactable
-├── Desk
-├── Cabinet
-├── Toolbox
-├── Terminal
-└── ExitDoor
-```
-
----
-
-## Smart Memory Management
-
-The project uses modern C++ smart pointers.
-
-```cpp
-std::unique_ptr<Interactable>
-std::shared_ptr<Item>
-```
-
-This avoids memory leaks while simplifying ownership management.
-
----
-
-## STL Containers
-
-- `std::map`
-- `std::vector`
-- `std::string`
-
----
-
-## File I/O
-
-The game supports persistent save files by storing:
-
-- Inventory
-- Player progress
-- Latest game state
-
----
-
-## Exception Handling
-
-Custom exceptions protect the game against invalid interactions and file errors.
-
-```cpp
-class GameException : public std::runtime_error
-```
 
 ---
 
